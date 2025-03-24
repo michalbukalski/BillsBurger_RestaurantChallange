@@ -24,8 +24,8 @@ public class Burger extends Item {
     public double getExtraPrice(String toppingName) {
 
         return switch (toppingName.toUpperCase()) {
-            case "AVOCADO", "CHEESE" -> 1.0;
-            case "BACON", "HAM", "SALAMI" -> 1.5;
+            case "AVOCADO", "CHEESE", "KETCHUP" -> 1.0;
+            case "BACON", "HAM", "SALAMI", "SZYNKA" -> 1.5;
             default -> 0.0;
         };
     }
